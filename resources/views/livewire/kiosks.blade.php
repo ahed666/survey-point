@@ -92,7 +92,7 @@
 
             </td>
             <td><span  class="xs:text-xs">{{ $kiosk->survey_name }}{{ $kiosk->survey_name }}{{ $kiosk->survey_name }}{{ $kiosk->survey_name }}</span></td>
-            <td><button wire:click="$emitTo('SurveyTemplate','refresh',{{ $kiosk->id }})">refresh</button></td>
+            <td><button wire:click="$emitTo('surveys','refresh',{{ $kiosk->id }})">refresh</button></td>
             <td><span class="{{ $kiosk->in_service?"text-green-400":"text-red-400" }} font-bold xs:text-xs">
                 {{ $kiosk->in_service?"In Service":"Out Of Service" }}</span></td>
             {{-- device code --}}
@@ -244,6 +244,7 @@
   {{-- end add device modal --}}
 </div>
 @push('scripts')
+
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
     //  to confirm delete language

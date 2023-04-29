@@ -43,6 +43,7 @@ class Kiosks extends Component
     'deviceaddsuccess'=>'deviceaddsuccess',
     // to confirm delete question
     'deleteDeviceConfirmed'=>'deletedevice',
+
     ];
     // validation rules
     protected $rules=[
@@ -54,6 +55,9 @@ class Kiosks extends Component
         'currentNameDevice.min' => 'Device name must be 2 or more characters',
         'currentNameDevice.max' => 'Device name must be less of or equal 25 characters ',
     ];
+
+
+
     public function sendrefresh($id)
     {
         $this->emitTo('livewire.survey-template',$id,'refresh',$id);

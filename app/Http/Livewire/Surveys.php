@@ -99,7 +99,9 @@ class Surveys extends Component
         //  to refresh after add question
         'questionaddsuccess' => 'questionaddsuccess',
 
+
     ];
+    
 //   if message edit success
     public function messageeditsuccess($id)
     {

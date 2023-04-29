@@ -716,8 +716,16 @@
             })()
         });
 </script>
-
 <script>
+
+    window.addEventListener('refresh', event => {
+       window.location.reload();
+       console.log('ggg');
+
+    });
+</script>
+<script>
+
 // //  close modal edit terms
 window.addEventListener('close_modal_edit_terms', event => {
     $('#surveyterms').modal('hide').data('bs.modal', null);

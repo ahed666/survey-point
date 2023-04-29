@@ -56,12 +56,13 @@ class SurveyTemplate extends Component
     public $countanswerchecked=0;
     protected $listeners=[
         //    to check if there is any update on kiosk
-        'checkonupdate'=>'checkonupdate',
-        'refresh'=>'refreshpage',
+
+        'refresh',
 
         ];
-    public function refreshpage($id)
-    {          dd($id);
+    public function refresh($id)
+    {
+        dd($id);
         $this->dispatchBrowserEvent('refresh');
 
 

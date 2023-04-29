@@ -82,7 +82,7 @@ Route::get('/', function () {
 Route::get('/devices/{device_name}/{device_id}',function($device_name,$device_id)
 {
     $id=Kiosk::wheredevice_code_id($device_id)->first()->id;
-    return view('survey-template',compact('id'));
+    return view('survey-template');
 }
 );
 

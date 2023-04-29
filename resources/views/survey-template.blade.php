@@ -16,7 +16,7 @@
     <body>
 
         <div style="overflow:hidden">
-            @livewire('survey-template',key($id))
+            @livewire('survey-template')
         </div>
 
 
